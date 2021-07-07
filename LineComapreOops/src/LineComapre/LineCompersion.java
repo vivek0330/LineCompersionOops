@@ -4,9 +4,8 @@ import java.util.*;
 
 public class LineCompersion {
 
-	// Create a method to find the length of line through taking coordinates from
-	// user's
-	public void myMethod() {
+	// Create a method to find the length of line through taking coordinates from user's
+	public Double myMethod() {
 
 		Scanner myObj = new Scanner(System.in);
 		System.out.println(" Welcome to Line Compersion Computation ");
@@ -21,6 +20,7 @@ public class LineCompersion {
 		System.out.println("enter coordinate_y2: " + coordinate_y2);
 		int Length = (int) (Math.sqrt((coordinate_x2 - coordinate_x1) ^ 2 + (coordinate_y2 - coordinate_y1) ^ 2));
 		System.out.println("Length of a line: " + Length);
+		return (double) Length;
 	}
 
 	public static void main(String[] args) {

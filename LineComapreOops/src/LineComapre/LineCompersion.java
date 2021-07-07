@@ -5,7 +5,7 @@ import java.util.*;
 public class LineCompersion {
 
 	// Create a method to find the length of line through taking coordinates from user's
-	public Double myMethod() {
+	public int myMethod() {
 
 		Scanner myObj = new Scanner(System.in);
 		System.out.println(" Welcome to Line Compersion Computation ");
@@ -20,11 +20,23 @@ public class LineCompersion {
 		System.out.println("enter coordinate_y2: " + coordinate_y2);
 		int Length = (int) (Math.sqrt((coordinate_x2 - coordinate_x1) ^ 2 + (coordinate_y2 - coordinate_y1) ^ 2));
 		System.out.println("Length of a line: " + Length);
-		return (double) Length;
+		return Length;
+	}
+	
+	public void Equality() {
+		int Line_1 = myMethod();
+		System.out.println("Enter the Co-ordinates for second line");
+		int Line_2 = myMethod();
+		
+		if (Line_1 == Line_2) {
+			System.out.println("Both lines are equal");
+		} else {
+			System.out.println("both are line are not equals");
+		}
 	}
 
 	public static void main(String[] args) {
 		LineCompersion sc = new LineCompersion();
-		sc.myMethod();
+		sc.Equality();
 	}
 }

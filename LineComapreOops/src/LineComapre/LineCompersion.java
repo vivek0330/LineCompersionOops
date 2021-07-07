@@ -30,8 +30,10 @@ public class LineCompersion {
 		
 		if (Line_1 == Line_2) {
 			System.out.println("Both lines are equal");
+		} else if (Line_1 > Line_2) {
+			System.out.println("Line 1 is greater then Line 2");
 		} else {
-			System.out.println("both are line are not equals");
+			System.out.println("Line 2 is greater then line 1");
 		}
 	}
 
